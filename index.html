@@ -7,7 +7,7 @@
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-    <link rel="stylesheet" href="./src/output.css" />
+    <link rel="stylesheet" href="./css/output.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -27,7 +27,7 @@
     <header class="container">
       <nav class="flex items-center justify-between py-2.5">
         <div class="flex items-center gap-1">
-          <img class="w-6 h-6" src="./src/logo.svg" alt="This is logo" />
+          <img class="w-6 h-6" src="./logo.svg" alt="This is logo" />
           <span class="text-xl font-semibold">Positivus</span>
         </div>
         <ul class="hidden lg:flex items-center gap-5">
@@ -36,7 +36,7 @@
           >
             <a
               class="text-gray-700 text-sm hover:text-gray-900 transition-colors duration-300"
-              href="./pages/about.html"
+              href="#"
               >About Us</a
             >
           </li>
@@ -45,7 +45,7 @@
           >
             <a
               class="text-gray-700 text-sm hover:text-gray-900 transition-colors duration-300"
-              href="./pages/service.html"
+              href="#"
               >Service</a
             >
           </li>
@@ -54,7 +54,7 @@
           >
             <a
               class="text-gray-700 text-sm hover:text-gray-900 transition-colors duration-300"
-              href="./pages/use-cases.html"
+              href="#"
               >Use Cases</a
             >
           </li>
@@ -63,7 +63,7 @@
           >
             <a
               class="text-gray-700 text-sm hover:text-gray-900 transition-colors duration-300"
-              href="./pages/pricing.html"
+              href="#"
               >Pricing</a
             >
           </li>
@@ -72,7 +72,7 @@
           >
             <a
               class="text-gray-700 text-sm hover:text-gray-900 transition-colors duration-300"
-              href="./pages/blog.html"
+              href="#"
               >Blog</a
             >
           </li>
@@ -96,13 +96,14 @@
           id="mobile-menu"
           class="flex flex-col gap-2 absolute top-10 left-0 w-full bg-white p-5 lg:hidden rounded-xl shadow-xl overflow-hidden max-h-0 opacity-0 scale-95 transition-all duration-300"
         >
-          <li><a href="./pages/about.html">About Us</a></li>
-          <li><a href="./pages/service.html">Service</a></li>
-          <li><a href="./pages/use-cases.html">Use Cases</a></li>
-          <li><a href="./pages/pricing.html">Pricing</a></li>
-          <li><a href="./pages/blog.html">Blog</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">Use Cases</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Blog</a></li>
         </ul>
       </nav>
+
       <div class="flex items-center justify-between mt-10">
         <div class="flex flex-col gap-5 lg:gap-7 pr-4 lg:pr-0">
           <h3
@@ -111,8 +112,8 @@
             Navigating the digital landscape for success
           </h3>
           <img
-            class="w-auto h-auto object-cover"
-            src="./src/assets/Illustration.svg"
+            class="w-auto h-auto object-cover lg:hidden"
+            src="./assets/Illustration.svg"
             alt="This is image"
           />
           <p class="w-[380px]">
@@ -121,7 +122,7 @@
             marketing, and content creation.
           </p>
           <button
-            class="bg-gray-900 border border-gray-900 text-white lg:w-[200px] py-4 px-5 rounded-lg"
+            class="bg-black border border-black text-white lg:w-[200px] py-3 px-5 rounded-lg"
           >
             Book a consultation
           </button>
@@ -129,7 +130,7 @@
         <div class="w-[35%]">
           <img
             class="w-full h-full object-cover"
-            src="./src/assets/Illustration.svg"
+            src="./assets/Illustration.svg"
             alt="This is image"
           />
         </div>
@@ -144,6 +145,6 @@
       });
     </script>
 
-    <script type="module" src="./src/script.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
