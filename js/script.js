@@ -1,15 +1,30 @@
 const menuBtn = document.getElementById("menu-btn");
 const mobileMenu = document.getElementById("mobile-menu");
+const icon = menuBtn.querySelector("i");
 
 menuBtn.addEventListener("click", () => {
-  mobileMenu.classList.toggle("max-h-96");
-  mobileMenu.classList.toggle("max-h-0");
-  mobileMenu.classList.toggle("opacity-100");
-  mobileMenu.classList.toggle("opacity-0");
+  const isHidden = mobileMenu.classList.contains("hidden");
 
-  const icon = menuBtn.querySelector("i");
-  icon.classList.toggle("fa-bars");
-  icon.classList.toggle("fa-xmark");
+  if (isHidden) {
+    mobileMenu.classList.remove("hidden");
+    setTimeout(() => {
+      mobileMenu.classList.remove("opacity-0", "translate-y-[-10px]");
+      mobileMenu.classList.add("opacity-100", "translate-y-0");
+    }, 10);
+    icon.classList.replace("fa-bars", "fa-xmark");
+  } else {
+    mobileMenu.classList.remove("opacity-100", "translate-y-0");
+    mobileMenu.classList.add("opacity-0", "translate-y-[-10px]");
+    setTimeout(() => {
+      mobileMenu.classList.add("hidden");
+    }, 300);
+    icon.classList.replace("fa-xmark", "fa-bars");
+  }
+});
 
-  menuBtn.classList.toggle("rotate-180");
+mobileMenu.querySelectorAll("a").forEach((link) => {
+  link.addEventListener("click", () => {
+    mobileMenu.classList.add("opacity-0", "translate-y-[-10px]", "hidden");
+    icon.classList.replace("fa-xmark", "fa-bars");
+  });
 });

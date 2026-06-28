@@ -1,12 +1,11 @@
 <!doctype html>
 <html lang="en">
-  <head>
+  <head class="scroll-smooth">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Positives landing page website</title>
+    <title>Positivus Landing Page</title>
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
     <link rel="stylesheet" href="./css/output.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,134 +16,404 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
   </head>
 
-  <body>
-    <header class="container">
-      <nav class="flex items-center justify-between py-2.5">
-        <div class="flex items-center gap-1">
-          <img class="w-6 h-6" src="./logo.svg" alt="This is logo" />
-          <span class="text-xl font-semibold">Positivus</span>
+  <body
+    class="font-['Inter',sans-serif] bg-white text-gray-900 overflow-x-hidden"
+  >
+    <header class="container mx-auto px-4 md:px-6 lg:px-8">
+      <nav class="flex items-center justify-between py-5 relative z-50">
+        <div class="flex items-center gap-2">
+          <img class="w-6 h-6" src="./logo.svg" alt="Positivus Logo" />
+          <span class="text-2xl font-bold tracking-tight">Positivus</span>
         </div>
-        <ul class="hidden lg:flex items-center gap-5">
-          <li
-            class="relative after:content=[''] after:absolute after:top-6 after:left-0 after:bottom-1 after:w-0 after:h-[1.5px] after:bg-gray-900 after:transition-all after:duration-300 hover:after:w-full"
-          >
+
+        <ul class="hidden lg:flex items-center gap-6">
+          <li class="relative group">
             <a
-              class="text-gray-700 text-sm hover:text-gray-900 transition-colors duration-300"
-              href="#"
+              class="text-gray-700 text-sm hover:text-black transition-colors duration-300"
+              href="#about"
               >About Us</a
             >
+            <span
+              class="absolute bottom-[-4px] left-0 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full"
+            ></span>
           </li>
-          <li
-            class="relative after:content=[''] after:absolute after:top-6 after:left-0 after:bottom-1 after:w-0 after:h-[1.5px] after:bg-gray-900 after:transition-all after:duration-300 hover:after:w-full"
-          >
+          <li class="relative group">
             <a
-              class="text-gray-700 text-sm hover:text-gray-900 transition-colors duration-300"
-              href="#"
-              >Service</a
+              class="text-gray-700 text-sm hover:text-black transition-colors duration-300"
+              href="#services"
+              >Services</a
             >
+            <span
+              class="absolute bottom-[-4px] left-0 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full"
+            ></span>
           </li>
-          <li
-            class="relative after:content=[''] after:absolute after:top-6 after:left-0 after:bottom-1 after:w-0 after:h-[1.5px] after:bg-gray-900 after:transition-all after:duration-300 hover:after:w-full"
-          >
+          <li class="relative group">
             <a
-              class="text-gray-700 text-sm hover:text-gray-900 transition-colors duration-300"
-              href="#"
+              class="text-gray-700 text-sm hover:text-black transition-colors duration-300"
+              href="#use-cases"
               >Use Cases</a
             >
+            <span
+              class="absolute bottom-[-4px] left-0 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full"
+            ></span>
           </li>
-          <li
-            class="relative after:content=[''] after:absolute after:top-6 after:left-0 after:bottom-1 after:w-0 after:h-[1.5px] after:bg-gray-900 after:transition-all after:duration-300 hover:after:w-full"
-          >
+          <li class="relative group">
             <a
-              class="text-gray-700 text-sm hover:text-gray-900 transition-colors duration-300"
-              href="#"
+              class="text-gray-700 text-sm hover:text-black transition-colors duration-300"
+              href="#pricing"
               >Pricing</a
             >
+            <span
+              class="absolute bottom-[-4px] left-0 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full"
+            ></span>
           </li>
-          <li
-            class="relative after:content=[''] after:absolute after:top-6 after:left-0 after:bottom-1 after:w-0 after:h-[1.5px] after:bg-gray-900 after:transition-all after:duration-300 hover:after:w-full"
-          >
+          <li class="relative group">
             <a
-              class="text-gray-700 text-sm hover:text-gray-900 transition-colors duration-300"
-              href="#"
+              class="text-gray-700 text-sm hover:text-black transition-colors duration-300"
+              href="#blog"
               >Blog</a
             >
+            <span
+              class="absolute bottom-[-4px] left-0 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full"
+            ></span>
           </li>
           <li>
             <button
-              class="border border-gray-700 text-gray-700 py-2 px-4 rounded-lg text-sm hover:border-gray-900 hover:text-gray-900 transition-colors duration-300"
+              class="border border-black text-black font-medium py-2.5 px-5 rounded-xl text-sm hover:bg-black hover:text-white transition-all duration-300"
             >
-              Request a quota
+              Request a quote
             </button>
           </li>
         </ul>
 
         <button
           id="menu-btn"
-          class="lg:hidden text-xl transition-transform duration-300"
+          class="lg:hidden text-2xl focus:outline-none z-50 transition-transform duration-300"
         >
-          <i class="fa-solid fa-bars text-2xl"></i>
+          <i class="fa-solid fa-bars"></i>
         </button>
 
         <ul
           id="mobile-menu"
-          class="flex flex-col gap-2 absolute top-10 left-0 w-full bg-white p-5 lg:hidden rounded-xl shadow-xl overflow-hidden max-h-0 opacity-0 scale-95 transition-all duration-300"
+          class="hidden flex-col gap-4 absolute top-full left-0 w-full bg-white p-6 rounded-2xl shadow-xl border border-gray-100 z-40 transition-all duration-300 opacity-0 transform translate-y-[-10px]"
         >
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Service</a></li>
-          <li><a href="#">Use Cases</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Blog</a></li>
+          <li>
+            <a
+              class="block py-2 text-gray-700 hover:text-black font-medium"
+              href="#about"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a
+              class="block py-2 text-gray-700 hover:text-black font-medium"
+              href="#services"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a
+              class="block py-2 text-gray-700 hover:text-black font-medium"
+              href="#use-cases"
+              >Use Cases</a
+            >
+          </li>
+          <li>
+            <a
+              class="block py-2 text-gray-700 hover:text-black font-medium"
+              href="#pricing"
+              >Pricing</a
+            >
+          </li>
+          <li>
+            <a
+              class="block py-2 text-gray-700 hover:text-black font-medium"
+              href="#blog"
+              >Blog</a
+            >
+          </li>
+          <li class="pt-2">
+            <button
+              class="w-full border border-black text-black font-medium py-3 px-5 rounded-xl text-sm hover:bg-black hover:text-white transition-all"
+            >
+              Request a quote
+            </button>
+          </li>
         </ul>
       </nav>
 
-      <div class="flex items-center justify-between mt-10">
-        <div class="flex flex-col gap-5 lg:gap-7 pr-4 lg:pr-0">
-          <h3
-            class="w-[450px] text-[52px] font-medium lg:text-6xl pr-1 leading-[63px]"
-          >
+      <div
+        id="about"
+        class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mt-8 lg:mt-16"
+      >
+        <div
+          class="flex flex-col gap-6 order-2 lg:order-1 max-w-xl mx-auto lg:mx-0 text-center lg:text-left"
+        >
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
             Navigating the digital landscape for success
-          </h3>
-          <img
-            class="w-auto h-auto object-cover lg:hidden"
-            src="./assets/Illustration.svg"
-            alt="This is image"
-          />
-          <p class="w-[380px]">
+          </h1>
+          <p class="text-base sm:text-lg text-gray-600">
             Our digital marketing agency helps businesses grow and succeed
             online through a range of services including SEO, PPC, social media
             marketing, and content creation.
           </p>
-          <button
-            class="bg-black border border-black text-white lg:w-[200px] py-3 px-5 rounded-lg"
-          >
-            Book a consultation
-          </button>
+          <div>
+            <button
+              class="w-full sm:w-auto bg-black border border-black text-white font-medium py-4 px-8 rounded-xl hover:bg-transparent hover:text-black transition-all duration-300"
+            >
+              Book a consultation
+            </button>
+          </div>
         </div>
-        <div class="w-[35%]">
+        <div class="order-1 lg:order-2 max-w-md lg:max-w-full mx-auto w-full">
           <img
-            class="w-full h-full object-cover"
+            class="w-full h-auto object-contain"
             src="./assets/Illustration.svg"
-            alt="This is image"
+            alt="Digital Marketing Illustration"
           />
         </div>
       </div>
+
+      <div
+        class="flex flex-wrap items-center justify-center lg:justify-between gap-8 md:gap-12 mt-16 grayscale opacity-70 hover:grayscale-0 transition-all duration-500"
+      >
+        <img
+          class="h-6 sm:h-8 w-auto object-contain"
+          src="./assets/companySvg/amazonLogo.svg"
+          alt="Amazon"
+        />
+        <img
+          class="h-6 sm:h-8 w-auto object-contain"
+          src="./assets/companySvg/dribbleVector.svg"
+          alt="Dribbble"
+        />
+        <img
+          class="h-6 sm:h-8 w-auto object-contain"
+          src="./assets/companySvg/hubspot.svg"
+          alt="Hubspot"
+        />
+        <img
+          class="h-6 sm:h-8 w-auto object-contain"
+          src="./assets/companySvg/notion.svg"
+          alt="Notion"
+        />
+        <img
+          class="h-6 sm:h-8 w-auto object-contain"
+          src="./assets/companySvg/netflix.svg"
+          alt="Netflix"
+        />
+        <img
+          class="h-6 sm:h-8 w-auto object-contain"
+          src="./assets/companySvg/zoom.svg"
+          alt="Zoom"
+        />
+      </div>
     </header>
+
+    <main class="container mx-auto px-4 md:px-6 lg:px-8 mt-20">
+      <section
+        id="services"
+        class="flex flex-col gap-10 scroll-mt-24"
+        data-aos="fade-up"
+      >
+        <div
+          class="flex flex-col md:flex-row items-center gap-5 text-center md:text-left"
+        >
+          <h2 class="bg-[#B9FF66] p-2 px-4 rounded-xl font-bold text-3xl">
+            Services
+          </h2>
+          <p class="text-sm text-gray-600 max-w-md">
+            At our digital marketing agency, we offer a range of services to
+            help businesses grow and succeed online. These services include:
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div
+            class="bg-[#F3F3F3] min-h-[220px] flex items-center justify-between border border-b-4 border-black rounded-3xl p-8 hover:shadow-lg transition-all"
+          >
+            <div class="flex flex-col justify-between h-full">
+              <span
+                class="bg-[#B9FF66] text-xl font-bold px-2 rounded-md block w-fit"
+                >Search engine</span
+              >
+              <span
+                class="bg-[#B9FF66] text-xl font-bold px-2 rounded-md block w-fit mt-1"
+                >optimization</span
+              >
+            </div>
+            <img
+              class="w-32 h-32 md:w-40 md:h-40 object-contain"
+              src="./assets/serviceSvg/serviceIllustration.svg"
+              alt="SEO"
+            />
+          </div>
+          <div
+            class="bg-[#B9FF66] min-h-[220px] flex items-center justify-between border border-b-4 border-black rounded-3xl p-8 hover:shadow-lg transition-all"
+          >
+            <div class="flex flex-col justify-between h-full">
+              <span
+                class="bg-white text-xl font-bold px-2 rounded-md block w-fit"
+                >Pay-per-click</span
+              >
+              <span
+                class="bg-white text-xl font-bold px-2 rounded-md block w-fit mt-1"
+                >advertising</span
+              >
+            </div>
+            <img
+              class="w-32 h-32 md:w-40 md:h-40 object-contain"
+              src="./assets/serviceSvg/service2Illustration.svg"
+              alt="PPC"
+            />
+          </div>
+          <div
+            class="bg-black min-h-[220px] flex items-center justify-between border border-b-4 border-black rounded-3xl p-8 hover:shadow-lg transition-all"
+          >
+            <div class="flex flex-col justify-between h-full">
+              <span
+                class="bg-white text-xl font-bold px-2 rounded-md block w-fit"
+                >Social Media</span
+              >
+              <span
+                class="bg-white text-xl font-bold px-2 rounded-md block w-fit mt-1"
+                >Marketing</span
+              >
+            </div>
+            <img
+              class="w-32 h-32 md:w-40 md:h-40 object-contain"
+              src="./assets/serviceSvg/service3Illustration.svg"
+              alt="SMM"
+            />
+          </div>
+          <div
+            class="bg-[#F3F3F3] min-h-[220px] flex items-center justify-between border border-b-4 border-black rounded-3xl p-8 hover:shadow-lg transition-all"
+          >
+            <div class="flex flex-col justify-between h-full">
+              <span
+                class="bg-[#B9FF66] text-xl font-bold px-2 rounded-md block w-fit"
+                >Email</span
+              >
+              <span
+                class="bg-[#B9FF66] text-xl font-bold px-2 rounded-md block w-fit mt-1"
+                >Marketing</span
+              >
+            </div>
+            <img
+              class="w-32 h-32 md:w-40 md:h-40 object-contain"
+              src="./assets/serviceSvg/service4Illustration.svg"
+              alt="Email Marketing"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="use-cases" class="mt-24 scroll-mt-24" data-aos="fade-up">
+        <div
+          class="flex flex-col md:flex-row items-center gap-5 mb-10 text-center md:text-left"
+        >
+          <h2 class="bg-[#B9FF66] p-2 px-4 rounded-xl font-bold text-3xl">
+            Use Cases
+          </h2>
+          <p class="text-sm text-gray-600 max-w-md">
+            Real-world examples of how we drive success for our partners.
+          </p>
+        </div>
+        <div
+          class="bg-black text-white p-8 md:p-12 rounded-3xl grid grid-cols-1 md:grid-cols-3 gap-8 divide-y md:divide-y-0 md:divide-x divide-gray-700"
+        >
+          <div class="pb-6 md:pb-0 md:pr-6">
+            <p class="text-gray-300 text-sm mb-4">
+              For a local real estate agency, we created a targeted PPC campaign
+              that increased qualified leads by 200% in 3 months.
+            </p>
+            <a
+              href="#"
+              class="text-[#B9FF66] hover:underline flex items-center gap-2"
+              >Learn more <i class="fa-solid fa-arrow-right text-xs"></i
+            ></a>
+          </div>
+          <div class="py-6 md:py-0 md:px-6">
+            <p class="text-gray-300 text-sm mb-4">
+              For a B2B software company, we built an SEO strategy that ranked
+              them top 3 for critical keywords, driving 150% organic traffic.
+            </p>
+            <a
+              href="#"
+              class="text-[#B9FF66] hover:underline flex items-center gap-2"
+              >Learn more <i class="fa-solid fa-arrow-right text-xs"></i
+            ></a>
+          </div>
+          <div class="pt-6 md:pt-0 md:pl-6">
+            <p class="text-gray-300 text-sm mb-4">
+              For a national retail chain, we optimized social media funnels
+              creating a 4x ROI on holiday ad spends.
+            </p>
+            <a
+              href="#"
+              class="text-[#B9FF66] hover:underline flex items-center gap-2"
+              >Learn more <i class="fa-solid fa-arrow-right text-xs"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing" class="mt-24 scroll-mt-24" data-aos="fade-up">
+        <div
+          class="flex flex-col md:flex-row items-center gap-5 mb-10 text-center md:text-left"
+        >
+          <h2 class="bg-[#B9FF66] p-2 px-4 rounded-xl font-bold text-3xl">
+            Pricing
+          </h2>
+          <p class="text-sm text-gray-600 max-w-md">
+            Flexible plans tailored to scale alongside your business growth.
+          </p>
+        </div>
+        <div
+          class="h-40 bg-gray-100 rounded-3xl border border-dashed border-gray-400 flex items-center justify-center text-gray-500"
+        >
+          Pricing Tables go here
+        </div>
+      </section>
+
+      <section id="blog" class="mt-24 mb-24 scroll-mt-24" data-aos="fade-up">
+        <div
+          class="flex flex-col md:flex-row items-center gap-5 mb-10 text-center md:text-left"
+        >
+          <h2 class="bg-[#B9FF66] p-2 px-4 rounded-xl font-bold text-3xl">
+            Blog
+          </h2>
+          <p class="text-sm text-gray-600 max-w-md">
+            Stay sharp with the latest insights from our marketing experts.
+          </p>
+        </div>
+        <div
+          class="h-40 bg-gray-100 rounded-3xl border border-dashed border-gray-400 flex items-center justify-center text-gray-500"
+        >
+          Latest Blog Posts go here
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-black text-white py-10 text-center text-sm">
+      <p>&copy; 2026 Positivus. All rights reserved.</p>
+    </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init({
-        duration: 300,
+        duration: 600,
         once: true,
       });
     </script>
-
-    <script src="./js/script.js"></script>
   </body>
 </html>

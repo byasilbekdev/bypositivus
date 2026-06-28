@@ -6,6 +6,15 @@ module.exports = {
       fontFamily: {
         sans: ["Inter", "sans-serif"],
       },
+      keyframes: {
+        slider: {
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+      },
+      animation: {
+        "auto-slider": "slider 10s linear infinite",
+      },
     },
     container: {
       center: true,
