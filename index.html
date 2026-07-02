@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Positivus Landing Page</title>
 
+    <link rel="shortcut icon" href="./favicon.svg" type="image/x-icon" />
+
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/output.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -33,7 +35,7 @@
           <li class="relative group">
             <a
               class="text-gray-700 text-sm hover:text-black transition-colors duration-300"
-              href="#about"
+              href="#"
               >About Us</a
             >
             <span
@@ -43,7 +45,7 @@
           <li class="relative group">
             <a
               class="text-gray-700 text-sm hover:text-black transition-colors duration-300"
-              href="#services"
+              href="#"
               >Services</a
             >
             <span
@@ -53,7 +55,7 @@
           <li class="relative group">
             <a
               class="text-gray-700 text-sm hover:text-black transition-colors duration-300"
-              href="#use-cases"
+              href="#"
               >Use Cases</a
             >
             <span
@@ -63,7 +65,7 @@
           <li class="relative group">
             <a
               class="text-gray-700 text-sm hover:text-black transition-colors duration-300"
-              href="#pricing"
+              href="#"
               >Pricing</a
             >
             <span
@@ -73,7 +75,7 @@
           <li class="relative group">
             <a
               class="text-gray-700 text-sm hover:text-black transition-colors duration-300"
-              href="#blog"
+              href="#"
               >Blog</a
             >
             <span
@@ -103,35 +105,35 @@
           <li>
             <a
               class="block py-2 text-gray-700 hover:text-black font-medium"
-              href="#about"
+              href="#"
               >About Us</a
             >
           </li>
           <li>
             <a
               class="block py-2 text-gray-700 hover:text-black font-medium"
-              href="#services"
+              href="#"
               >Services</a
             >
           </li>
           <li>
             <a
               class="block py-2 text-gray-700 hover:text-black font-medium"
-              href="#use-cases"
+              href="#"
               >Use Cases</a
             >
           </li>
           <li>
             <a
               class="block py-2 text-gray-700 hover:text-black font-medium"
-              href="#pricing"
+              href="#"
               >Pricing</a
             >
           </li>
           <li>
             <a
               class="block py-2 text-gray-700 hover:text-black font-medium"
-              href="#blog"
+              href="#"
               >Blog</a
             >
           </li>
@@ -146,13 +148,14 @@
       </nav>
 
       <div
-        id="about"
         class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mt-8 lg:mt-16"
       >
         <div
           class="flex flex-col gap-6 order-2 lg:order-1 max-w-xl mx-auto lg:mx-0 text-center lg:text-left"
         >
-          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
+          <h1
+            class="text-5xl sm:text-5xl lg:text-[63px] font-bold leading-tight"
+          >
             Navigating the digital landscape for success
           </h1>
           <p class="text-base sm:text-lg text-gray-600">
@@ -178,7 +181,7 @@
       </div>
 
       <div
-        class="flex flex-wrap items-center justify-center lg:justify-between gap-8 md:gap-12 mt-16 grayscale opacity-70 hover:grayscale-0 transition-all duration-500"
+        class="flex flex-wrap items-center justify-center lg:justify-between gap-8 md:gap-12 mt-16 grayscale transition-all duration-500"
       >
         <img
           class="h-6 sm:h-8 w-auto object-contain"
@@ -213,16 +216,16 @@
       </div>
     </header>
 
-    <main class="container mx-auto px-4 md:px-6 lg:px-8 mt-20">
-      <section
-        id="services"
-        class="flex flex-col gap-10 scroll-mt-24"
-        data-aos="fade-up"
-      >
+    <main
+      class="container mx-auto px-4 md:px-6 lg:px-8 mt-10 md:mt-15 lg:mt-20"
+    >
+      <section class="flex flex-col gap-10 scroll-mt-24" data-aos="fade-up">
         <div
           class="flex flex-col md:flex-row items-center gap-5 text-center md:text-left"
         >
-          <h2 class="bg-[#B9FF66] p-2 px-4 rounded-xl font-bold text-3xl">
+          <h2
+            class="bg-[#B9FF66] p-2 px-4 rounded-xl font-bold text-2xl md:text-3xl"
+          >
             Services
           </h2>
           <p class="text-sm text-gray-600 max-w-md">
@@ -235,15 +238,30 @@
           <div
             class="bg-[#F3F3F3] min-h-[220px] flex items-center justify-between border border-b-4 border-black rounded-3xl p-8 hover:shadow-lg transition-all"
           >
-            <div class="flex flex-col justify-between h-full">
-              <span
-                class="bg-[#B9FF66] text-xl font-bold px-2 rounded-md block w-fit"
-                >Search engine</span
-              >
-              <span
-                class="bg-[#B9FF66] text-xl font-bold px-2 rounded-md block w-fit mt-1"
-                >optimization</span
-              >
+            <div class="flex flex-col justify-between gap-7">
+              <div class="flex flex-col justify-between">
+                <span
+                  class="bg-[#B9FF66] text-xl font-bold px-2 rounded-md rounded-bl-none block w-fit"
+                  >Search engine</span
+                >
+                <span
+                  class="bg-[#B9FF66] text-xl font-bold px-2 rounded-md rounded-t-none block w-fit"
+                  >optimization</span
+                >
+              </div>
+
+              <div class="flex items-center gap-2">
+                <button
+                  class="flex items-center justify-between border rounded-full bg-[#B9FF66] p-2"
+                >
+                  <img
+                    class="w-full h-full object-cover"
+                    src="./assets/Arrow.svg"
+                    alt="This is arrow icon"
+                  />
+                </button>
+                <p>Learn more</p>
+              </div>
             </div>
             <img
               class="w-32 h-32 md:w-40 md:h-40 object-contain"
