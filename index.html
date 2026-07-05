@@ -22,9 +22,9 @@
   </head>
 
   <body
-    class="font-['Inter',sans-serif] bg-white text-gray-900 overflow-x-hidden"
+    class="font-['Inter',sans-serif] bg-white text-gray-900 overflow-x-hidden flex flex-col gap-14"
   >
-    <header class="container mx-auto px-4 md:px-6 lg:px-8">
+    <header class="container px-5 lg:px-0">
       <nav class="flex items-center justify-between py-5 relative z-50">
         <div class="flex items-center gap-2">
           <img class="w-6 h-6" src="./logo.svg" alt="Positivus Logo" />
@@ -134,7 +134,7 @@
           class="flex flex-col gap-6 order-2 lg:order-1 max-w-xl mx-auto lg:mx-0 text-center lg:text-left"
         >
           <h1
-            class="text-5xl sm:text-5xl lg:text-[63px] font-bold leading-tight"
+            class="text-[40px] sm:text-5xl lg:text-[63px] font-bold leading-tight text-start"
           >
             Navigating the digital landscape for success
           </h1>
@@ -196,11 +196,224 @@
       </div>
     </header>
 
-    <main
-      class="container mx-auto px-4 md:px-6 lg:px-8 mt-10 md:mt-15 lg:mt-20"
-    ></main>
+    <main class="container px-5 lg:px-0">
+      <section class="flex flex-col gap-10">
+        <div class="flex flex-col lg:flex-row items-center gap-5">
+          <h2
+            class="bg-[#B9FF66] py-2 px-4 rounded-lg text-xl inline-block font-semibold"
+          >
+            Services
+          </h2>
+          <p
+            class="w-auto lg:w-[450px] text-sm text-wrap text-center lg:text-start"
+          >
+            At our digital marketing agency, we offer a range of services to
+            help businesses grow and succeed online. These services include:
+          </p>
+        </div>
 
-    <footer class="container bg-[#191A23] rounded-t-3xl">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-7">
+          <div
+            class="bg-[#F3F3F3] flex justify-between border border-[#191A23] py-4 px-5 lg:py-8 lg:px-10 rounded-2xl"
+          >
+            <div class="flex flex-col gap-11">
+              <div>
+                <p
+                  class="bg-[#B9FF66] py-0.5 px-2 rounded-t-md rounded-r-md font-semibold"
+                >
+                  Search engine
+                </p>
+                <span
+                  class="bg-[#B9FF66] py-0.5 px-2 rounded-b-md rounded-r-md font-semibold"
+                >
+                  optimization
+                </span>
+              </div>
+              <button class="flex items-center gap-2 text-sm">
+                <img
+                  class="w-7 bg-[#191A23] text-white rounded-full p-2"
+                  src="./assets/Arrow.svg"
+                  alt="This is arrow icon"
+                />
+                Learn more
+              </button>
+            </div>
+            <img
+              class="w-[130px] object-cover"
+              src="./assets/serviceSvg/serviceIllustration.svg"
+              alt="This is service illustration"
+            />
+          </div>
+
+          <div
+            class="bg-[#B9FF66] flex justify-between border border-[#191A23] py-4 px-5 lg:py-8 lg:px-10 rounded-2xl"
+          >
+            <div class="flex flex-col gap-11">
+              <div>
+                <p
+                  class="bg-[#F3F3F3] py-0.5 px-2 rounded-t-md rounded-r-md font-semibold"
+                >
+                  Pay-per-click
+                </p>
+                <span
+                  class="bg-[#F3F3F3] py-0.5 px-2 rounded-b-md rounded-r-md font-semibold"
+                >
+                  advertising
+                </span>
+              </div>
+              <button class="flex items-center gap-2 text-sm">
+                <img
+                  class="w-7 bg-[#191A23] text-white rounded-full p-2"
+                  src="./assets/Arrow.svg"
+                  alt="This is arrow icon"
+                />
+                Learn more
+              </button>
+            </div>
+            <img
+              class="w-[130px] object-cover"
+              src="./assets/serviceSvg/service2Illustration.svg"
+              alt="This is service illustration"
+            />
+          </div>
+
+          <div
+            class="bg-[#191A23] flex justify-between border border-[#191A23] py-4 px-5 lg:py-8 lg:px-10 rounded-2xl"
+          >
+            <div class="flex flex-col gap-11">
+              <div>
+                <p
+                  class="bg-[#F3F3F3] py-0.5 px-2 rounded-t-md rounded-r-md font-semibold"
+                >
+                  Social Media
+                </p>
+                <span
+                  class="bg-[#F3F3F3] py-0.5 px-2 rounded-b-md rounded-r-md font-semibold"
+                >
+                  Marketing
+                </span>
+              </div>
+              <button class="flex items-center gap-2 text-white text-sm">
+                <img
+                  class="w-7 bg-[#F3F3F3] rounded-full p-0.5"
+                  src="./assets/ArrowDark.svg"
+                  alt="This is arrow icon"
+                />
+                Learn more
+              </button>
+            </div>
+            <img
+              class="w-[125px] object-cover"
+              src="./assets/serviceSvg/service3Illustration.svg"
+              alt="This is service illustration"
+            />
+          </div>
+
+          <div
+            class="bg-[#F3F3F3] flex justify-between border border-[#191A23] py-4 px-5 lg:py-8 lg:px-10 rounded-2xl"
+          >
+            <div class="flex flex-col gap-11">
+              <div>
+                <p
+                  class="bg-[#B9FF66] py-0.5 px-2 rounded-t-md rounded-r-md font-semibold"
+                >
+                  Email
+                </p>
+                <span
+                  class="bg-[#B9FF66] py-0.5 px-2 rounded-b-md rounded-r-md font-semibold"
+                >
+                  Marketing
+                </span>
+              </div>
+              <button class="flex items-center gap-2 text-sm">
+                <img
+                  class="w-7 bg-[#191A23] text-white rounded-full p-2"
+                  src="./assets/Arrow.svg"
+                  alt="This is arrow icon"
+                />
+                Learn more
+              </button>
+            </div>
+            <img
+              class="w-[130px] object-cover"
+              src="./assets/serviceSvg/service4Illustration.svg"
+              alt="This is service illustration"
+            />
+          </div>
+
+          <div
+            class="bg-[#B9FF66] flex justify-between border border-[#191A23] py-4 px-5 lg:py-8 lg:px-10 rounded-2xl"
+          >
+            <div class="flex flex-col gap-11">
+              <div>
+                <p
+                  class="bg-[#F3F3F3] py-0.5 px-2 rounded-t-md rounded-r-md font-semibold"
+                >
+                  Content
+                </p>
+                <span
+                  class="bg-[#F3F3F3] py-0.5 px-2 rounded-b-md rounded-r-md font-semibold"
+                >
+                  Creation
+                </span>
+              </div>
+              <button class="flex items-center gap-2 text-sm">
+                <img
+                  class="w-7 bg-[#191A23] text-white rounded-full p-2"
+                  src="./assets/Arrow.svg"
+                  alt="This is arrow icon"
+                />
+                Learn more
+              </button>
+            </div>
+            <img
+              class="w-[130px] object-cover"
+              src="./assets/serviceSvg/service5Illustration.svg"
+              alt="This is service illustration"
+            />
+          </div>
+
+          <div
+            class="bg-[#191A23] flex justify-between border border-[#191A23] py-4 px-5 lg:py-8 lg:px-10 rounded-2xl"
+          >
+            <div class="flex flex-col gap-11">
+              <div>
+                <p
+                  class="bg-[#F3F3F3] py-0.5 px-2 rounded-t-md rounded-r-md font-semibold"
+                >
+                  Analytics and
+                </p>
+                <span
+                  class="bg-[#F3F3F3] py-0.5 px-2 rounded-b-md rounded-r-md font-semibold"
+                >
+                  Tracking
+                </span>
+              </div>
+              <button class="flex items-center gap-2 text-white text-sm">
+                <img
+                  class="w-7 bg-[#F3F3F3] rounded-full p-0.5"
+                  src="./assets/ArrowDark.svg"
+                  alt="This is arrow icon"
+                />
+                Learn more
+              </button>
+            </div>
+            <img
+              class="w-[125px] object-cover"
+              src="./assets/serviceSvg/service6Illustration.svg"
+              alt="This is service illustration"
+            />
+          </div>
+        </div>
+      </section>
+      <section></section>
+      <section></section>
+      <section></section>
+      <section></section>
+      <section></section>
+    </main>
+
+    <footer class="container px-5 lg:px-0 bg-[#191A23] rounded-t-3xl">
       <div class="py-5 lg:p-10 flex flex-col gap-7">
         <div class="flex items-center justify-between">
           <a href="/" class="flex items-center gap-2">
@@ -288,7 +501,7 @@
               Moonstone City, Stardust State 12345
             </p>
           </div>
-          <div
+          <form
             class="flex flex-col lg:flex-row items-center gap-5 lg:gap-7 bg-[#292A32] py-8 px-6 lg:py-14 lg:px-10 rounded-xl"
           >
             <input
@@ -297,11 +510,12 @@
               placeholder="Email"
             />
             <button
+              type="submit"
               class="w-full sm:w-auto bg-[#B9FF66] border border-[#B9FF66] text-black font-medium py-4 px-8 rounded-xl"
             >
               Subscribe to news
             </button>
-          </div>
+          </form>
         </div>
 
         <span class="block w-full h-[0.5px] bg-white"></span>
